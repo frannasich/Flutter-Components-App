@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components_app/router/app_routes.dart';
+import 'package:flutter_components_app/themes/app_themes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         body: ListView.separated(
             itemBuilder: (context, index) => ListTile(
                   title: Text(menuOptions[index].name),
-                  leading: Icon(menuOptions[index].icon),
+                  leading: Icon(menuOptions[index].icon, color: AppTheme.iconsColor),
                   onTap: () {
                     // final route = MaterialPageRoute(builder: (context) => const ListView2Screen(),);
                     // Navigator.push(context, route);
