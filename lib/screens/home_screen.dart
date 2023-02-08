@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         body: ListView.separated(
             itemBuilder: (context, index) => ListTile(
                   title: Text(menuOptions[index].name),
-                  leading: Icon(menuOptions[index].icon, color: AppTheme.iconsColor),
+                  leading: Icon(menuOptions[index].icon, color: AppTheme.secondary),
                   onTap: () {
                     // final route = MaterialPageRoute(builder: (context) => const ListView2Screen(),);
                     // Navigator.push(context, route);
